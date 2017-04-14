@@ -30,10 +30,11 @@ public class TopicService {
     }
 
     public Topic getTopic(String id) {
-        return topics.stream()
-            .filter(t -> t.getId().equals(id))
-            .findFirst()
-            .get();
+        return topicRepository.findOne(id);
+//        return topics.stream()
+//            .filter(t -> t.getId().equals(id))
+//            .findFirst()
+//            .get();
     }
 
     public void addTopic(Topic topic) {
@@ -41,10 +42,10 @@ public class TopicService {
     }
 
      public void updateTopic(String id, Topic topic) {
-         
+        topicRepository.save(topic);
      }
 
     public void deleteTopic(String id) {
-         
+         topicRepository.delete(id);
      }
 }
