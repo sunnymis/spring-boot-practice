@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
-// import com.topic.TopicRepository;
+// import com.topic.CourseRepository;
 
 // @Service indicates that this class is a service
 // Spring makes services singletons for you.  

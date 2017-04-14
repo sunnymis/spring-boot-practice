@@ -15,10 +15,10 @@ import java.util.List;
 public class TopicController {
     
     // @Autowired marks this as a field that needs dependency injection
-    // When spring creates an instance of the TopicController, it goes through
+    // When spring creates an instance of the CourseController, it goes through
     // all the properties of the class, comes to topicService and see's it is 
     // Autowired. So it finds the Service it has registered that corresponds to
-    // TopicService and injects it here for you. 
+    // CourseService and injects it here for you.
     @Autowired
     private TopicService topicService; 
 
